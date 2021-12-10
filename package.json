@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@welcome-ui/button": "^3.4.3",
+    "@welcome-ui/core": "^3.13.2",
+    "@welcome-ui/icon": "^3.0.0",
+    "@welcome-ui/system": "^3.0.0",
+    "@welcome-ui/text": "^3.1.1",
+    "@welcome-ui/utils": "^3.4.3",
+    "@xstyled/styled-components": "^2.2.3",
+    "@xstyled/system": "^2.2.3",
+    "next": "12.0.7",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "devDependencies": {
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7"
+  }
+}
