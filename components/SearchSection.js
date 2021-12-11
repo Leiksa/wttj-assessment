@@ -27,8 +27,13 @@ export default function SearchSection() {
           )}
         ></Form>
       </Box>
-      <Box flex="1 0" display="flex" mt={{ xs: "1rem", md: "0" }}>
-        <Box w="100%" mx={6}>
+      <Box
+        flex="1 0"
+        display="flex"
+        mt={{ xs: 10, lg: 0 }}
+        flexWrap={{ xs: "wrap", sm: "nowrap" }}
+      >
+        <Box w="100%" mx={{ xs: 0, sm: 6 }}>
           <Form
             onSubmit={() => alert("youhou")}
             initialValues={{ welcome3: ["github", "twitter"] }}
@@ -48,7 +53,7 @@ export default function SearchSection() {
             )}
           ></Form>
         </Box>
-        <Box w="100%">
+        <Box w="100%" mt={{ xs: 10, sm: "0" }}>
           <Form
             onSubmit={() => alert("youhou")}
             initialValues={{ welcome3: ["github", "twitter"] }}

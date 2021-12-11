@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { createTheme, WuiProvider } from "@welcome-ui/core";
-import { Header, SearchSection } from "../components";
+import { Header, JobList, SearchSection } from "../components";
+import axios from "axios";
 
 const theme = createTheme({
   colors: {
@@ -61,11 +62,30 @@ const theme = createTheme({
   },
 });
 
-export default function Root() {
+export default function Root(props) {
+  const [organization, setOrganization] = useState(props.organization);
+  //console.log(props.organization);
+
   return (
     <WuiProvider theme={theme}>
       <Header />
       <SearchSection />
+      <JobList organization={organization} />
     </WuiProvider>
   );
+}
+
+export async function getServerSideProps() {
+  try {
+    const { data } = await axios.get(
+      `https://www.welcomekit.co/api/v1/embed?organization_reference=Pg4eV6k`
+    );
+
+    return {
+      props: { organization: data },
+    };
+  } catch (error) {
+    console.error(error);
+    return { props: { organization: { name: null, jobs: [] } } };
+  }
 }
