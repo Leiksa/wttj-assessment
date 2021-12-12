@@ -449,6 +449,14 @@
     "@welcome-ui/button" "^3.4.3"
     "@welcome-ui/icons.cross" "^3.4.0"
 
+"@welcome-ui/close-button@^3.12.0":
+  version "3.12.0"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/close-button/-/close-button-3.12.0.tgz#028f2cb7b02c3870af0f5591dd71c923e1ec4a46"
+  integrity sha512-nEjwndZdpm1z+VorXBCUFuSit68lkZF9wezscRBDCFCWgEa6cAqIHUskPA6W+37SjcMf0Yk9dgXOWL0PN5vEqg==
+  dependencies:
+    "@welcome-ui/button" "^3.4.3"
+    "@welcome-ui/icons.cross" "^3.4.0"
+
 "@welcome-ui/core@^3.13.2":
   version "3.13.2"
   resolved "https://registry.yarnpkg.com/@welcome-ui/core/-/core-3.13.2.tgz#e846204e0e5965182ec6877a0cdc6a274062d068"
@@ -2485,6 +2493,18 @@
     "@welcome-ui/system" "^3.0.0"
     "@welcome-ui/utils" "^3.4.3"
     "@welcome-ui/variant-icon" "^3.4.3"
+
+"@welcome-ui/modal@^3.13.0":
+  version "3.13.0"
+  resolved "https://registry.yarnpkg.com/@welcome-ui/modal/-/modal-3.13.0.tgz#f18adfcec59fd44cda84f76fc99f8b9a16170537"
+  integrity sha512-JEGYmB5uMj+Bldk/LGcCKw7UwMAjG/aiijJM/RHw8EI01GRlcsGlbYKOn0SvhMWZGYwvwx81nxbfCJPknGDhwQ==
+  dependencies:
+    "@welcome-ui/box" "^3.0.0"
+    "@welcome-ui/close-button" "^3.12.0"
+    "@welcome-ui/shape" "^3.4.3"
+    "@welcome-ui/text" "^3.1.1"
+    "@welcome-ui/utils" "^3.4.3"
+    reakit "^1.3.6"
 
 "@welcome-ui/search@^3.11.0":
   version "3.11.0"

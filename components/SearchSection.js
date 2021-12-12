@@ -6,17 +6,16 @@ import { Select } from "@welcome-ui/select";
 import { SearchIcon, MapIcon, SuitcaseIcon } from "@welcome-ui/icons";
 
 export default function SearchSection() {
-  const arr = ["hey", "lol"];
   return (
     <Box padding="3xl" display="flex" flexWrap="wrap">
       <Box flex="1 0" minWidth={0.6}>
         <Form
-          onSubmit={() => alert("lol")}
+          onSubmit={() => alert("searchbar")}
           initialValues={{}}
           render={({ handleSubmit }) => (
             <form onSubmit={handleSubmit}>
               <Field
-                icon={<SearchIcon label="Social networks" color="light.100" />}
+                icon={<SearchIcon label="SearchBar" color="light.100" />}
                 component={InputText}
                 isClearable
                 name="searchBar"
@@ -35,17 +34,15 @@ export default function SearchSection() {
       >
         <Box w="100%" mx={{ xs: 0, sm: 6 }}>
           <Form
-            onSubmit={() => alert("youhou")}
+            onSubmit={() => alert("selectDepartment")}
             initialValues={{ welcome3: ["github", "twitter"] }}
             render={({ handleSubmit }) => (
               <form onSubmit={handleSubmit}>
                 <Field
-                  icon={
-                    <SuitcaseIcon label="Social networks" color="light.100" />
-                  }
+                  icon={<SuitcaseIcon label="suitcaseIcon" color="light.100" />}
                   component={Select}
                   isMultiple
-                  options={arr}
+                  options={["github", "twitter"]}
                   name="welcome3"
                   label="Department"
                 />
@@ -55,12 +52,12 @@ export default function SearchSection() {
         </Box>
         <Box w="100%" mt={{ xs: 10, sm: "0" }}>
           <Form
-            onSubmit={() => alert("youhou")}
+            onSubmit={() => alert("selectCity")}
             initialValues={{ welcome3: ["github", "twitter"] }}
             render={({ handleSubmit }) => (
               <form onSubmit={handleSubmit}>
                 <Field
-                  icon={<MapIcon label="Social networks" color="light.100" />}
+                  icon={<MapIcon label="mapIcon" color="light.100" />}
                   component={Select}
                   isMultiple
                   options={["github", "twitter"]}

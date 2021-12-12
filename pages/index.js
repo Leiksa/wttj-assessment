@@ -64,7 +64,6 @@ const theme = createTheme({
 
 export default function Root(props) {
   const [organization, setOrganization] = useState(props.organization);
-  //console.log(props.organization);
 
   return (
     <WuiProvider theme={theme}>
