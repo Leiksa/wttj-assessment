@@ -66,7 +66,7 @@ export default function Root(props) {
   const [organization, setOrganization] = useState(props.organization);
   const [search, setSearch] = useState("");
   const [department, setDepartment] = useState("None");
-  const [office, setOffice] = useState("");
+  const [office, setOffice] = useState("None");
 
   function filteredJobs() {
     return organization.jobs.filter(

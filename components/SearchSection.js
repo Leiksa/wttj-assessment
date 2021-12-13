@@ -52,6 +52,7 @@ export default function SearchSection(props) {
       >
         <Box w="100%" mx={{ xs: 0, sm: 6 }}>
           <Field
+            id="departments-downshift"
             icon={<SuitcaseIcon label="suitcaseIcon" color="light.100" />}
             component={Select}
             value={department === "None" ? "" : department}
@@ -62,6 +63,7 @@ export default function SearchSection(props) {
         </Box>
         <Box w="100%" mt={{ xs: 10, sm: "0" }}>
           <Field
+            id="offices-downshift"
             icon={<MapIcon label="mapIcon" color="light.100" />}
             component={Select}
             value={office === "None" ? "" : office}
