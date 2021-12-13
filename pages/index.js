@@ -64,12 +64,32 @@ const theme = createTheme({
 
 export default function Root(props) {
   const [organization, setOrganization] = useState(props.organization);
+  const [search, setSearch] = useState("");
+  const [department, setDepartment] = useState("None");
+  const [office, setOffice] = useState("");
+
+  function filteredJobs() {
+    return organization.jobs.filter(
+      (job) =>
+        job.name.toLowerCase().includes(search.toLowerCase()) &&
+        (department === "None" || job.department.name === department) &&
+        (office === "None" || job.office.name === office)
+    );
+  }
 
   return (
     <WuiProvider theme={theme}>
       <Header />
-      <SearchSection />
-      <JobList organization={organization} />
+      <SearchSection
+        jobs={organization.jobs}
+        filteredJobs={filteredJobs()}
+        department={department}
+        office={office}
+        setSearch={setSearch}
+        setDepartment={setDepartment}
+        setOffice={setOffice}
+      />
+      <JobList organization={organization} jobs={filteredJobs()} />
     </WuiProvider>
   );
 }

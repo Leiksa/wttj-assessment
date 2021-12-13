@@ -2,7 +2,7 @@ import { Stack } from "@welcome-ui/stack";
 import { JobItem } from ".";
 
 export default function JobList(props) {
-  const { organization } = props;
+  const { organization, jobs } = props;
   return (
     <Stack
       direction="row"
@@ -10,7 +10,7 @@ export default function JobList(props) {
       spacing="0px"
       justifyContent="center"
     >
-      {organization.jobs.map((job) => {
+      {jobs.map((job) => {
         return (
           <JobItem key={job.id} job={job} organization={organization.name} />
         );

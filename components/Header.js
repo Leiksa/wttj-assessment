@@ -3,9 +3,9 @@ import { Text } from "@welcome-ui/text";
 import { Shape } from "@welcome-ui/shape";
 import Image from "next/image";
 import dianeAvatar from "../assets/dianeAvatar.png";
-import fingercrossedDiane from "../assets/fingercrossedDiane.png";
-import happyDiane from "../assets/happyDiane.png";
-import oopsDiane from "../assets/oopsDiane.png";
+import dianeFingercrossed from "../assets/dianeFingercrossed.png";
+import dianeHappy from "../assets/dianeHappy.png";
+import dianeOops from "../assets/dianeOops.png";
 import { useState } from "react";
 import styled from "styled-components";
 
@@ -14,12 +14,11 @@ const ShapeStyled = styled(Shape)`
 `;
 
 export default function Header() {
-  const [easterEgg, setEasterEgg] = useState(false);
   const [avatars, setAvatars] = useState([
     dianeAvatar,
-    fingercrossedDiane,
-    happyDiane,
-    oopsDiane,
+    dianeFingercrossed,
+    dianeHappy,
+    dianeOops,
   ]);
   const [index, setIndex] = useState(0);
 
