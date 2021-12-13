@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { createTheme, WuiProvider } from "@welcome-ui/core";
-import { Header, JobList, SearchSection } from "../components";
+import { Box } from "@welcome-ui/box";
+import {
+  EmptyJobList,
+  Footer,
+  Header,
+  JobList,
+  SearchSection,
+} from "../components";
 import axios from "axios";
 
 const theme = createTheme({
@@ -77,19 +84,31 @@ export default function Root(props) {
     );
   }
 
+  const isJobList =
+    filteredJobs() == 0 ? (
+      <EmptyJobList></EmptyJobList>
+    ) : (
+      <JobList organization={organization} jobs={filteredJobs()} />
+    );
+
   return (
     <WuiProvider theme={theme}>
-      <Header />
-      <SearchSection
-        jobs={organization.jobs}
-        filteredJobs={filteredJobs()}
-        department={department}
-        office={office}
-        setSearch={setSearch}
-        setDepartment={setDepartment}
-        setOffice={setOffice}
-      />
-      <JobList organization={organization} jobs={filteredJobs()} />
+      <Box position="relative" minHeight="100vh">
+        <Box pb="5rem">
+          <Header />
+          <SearchSection
+            jobs={organization.jobs}
+            filteredJobs={filteredJobs()}
+            department={department}
+            office={office}
+            setSearch={setSearch}
+            setDepartment={setDepartment}
+            setOffice={setOffice}
+          />
+          {isJobList}
+        </Box>
+        <Footer width="100%" />
+      </Box>
     </WuiProvider>
   );
 }

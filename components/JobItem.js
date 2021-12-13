@@ -15,7 +15,7 @@ import dayjs from "dayjs";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
 
-// Modal no overflow if max-height is not 100vh but auto
+// Modal no overflow scroll if max-height is not 100vh but auto
 const StyledModal = styled(Modal)`
   max-height: 100vh;
 `;

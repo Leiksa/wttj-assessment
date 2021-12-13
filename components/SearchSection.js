@@ -50,7 +50,7 @@ export default function SearchSection(props) {
         mt={{ xs: 10, lg: 0 }}
         flexWrap={{ xs: "wrap", sm: "nowrap" }}
       >
-        <Box w="100%" mx={{ xs: 0, sm: 6 }}>
+        <Box w="100%" mx={{ xs: 0, sm: 6 }} minWidth="180px">
           <Field
             id="departments-downshift"
             icon={<SuitcaseIcon label="suitcaseIcon" color="light.100" />}
@@ -61,7 +61,7 @@ export default function SearchSection(props) {
             label="Department"
           />
         </Box>
-        <Box w="100%" mt={{ xs: 10, sm: "0" }}>
+        <Box w="100%" mt={{ xs: 10, sm: "0" }} minWidth="180px">
           <Field
             id="offices-downshift"
             icon={<MapIcon label="mapIcon" color="light.100" />}

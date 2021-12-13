@@ -3,6 +3,7 @@ import { Text } from "@welcome-ui/text";
 import { Shape } from "@welcome-ui/shape";
 import Image from "next/image";
 import dianeAvatar from "../assets/dianeAvatar.png";
+import dianeCelebrate from "../assets/dianeCelebrate.png";
 import dianeFingercrossed from "../assets/dianeFingercrossed.png";
 import dianeHappy from "../assets/dianeHappy.png";
 import dianeOops from "../assets/dianeOops.png";
@@ -16,6 +17,7 @@ const ShapeStyled = styled(Shape)`
 export default function Header() {
   const [avatars, setAvatars] = useState([
     dianeAvatar,
+    dianeCelebrate,
     dianeFingercrossed,
     dianeHappy,
     dianeOops,
@@ -31,7 +33,13 @@ export default function Header() {
   }
 
   return (
-    <Box w="100%" bg="white" padding="4xl" display="flex">
+    <Box
+      w="100%"
+      bg="white"
+      padding="4xl"
+      display="flex"
+      flexWrap={{ xs: "wrap", sm: "nowrap" }}
+    >
       <Text variant="h3" as="h1">
         Welcome to the Leiksa Universe
       </Text>
