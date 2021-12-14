@@ -1,6 +1,6 @@
-[![Welcome to Leiksa Universe](https://wttj-assessment.vercel.app/preview.png)](https://wttj-assessment.vercel.app)
+[![Welcome to the Leiksa Universe](https://wttj-assessment.vercel.app/preview.png)](https://wttj-assessment.vercel.app)
 
-# Welcome to Leiksa Universe
+# Welcome to the Leiksa Universe
 
 [![Netlify Status][vercel-src]][vercel-href]
 
