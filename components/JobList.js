@@ -1,4 +1,5 @@
 import { Stack } from "@welcome-ui/stack";
+import PropTypes from "prop-types";
 import { JobItem } from ".";
 
 export default function JobList(props) {
@@ -18,3 +19,13 @@ export default function JobList(props) {
     </Stack>
   );
 }
+
+JobList.propTypes = {
+  organization: PropTypes.object.isRequired,
+  jobs: PropTypes.array.isRequired,
+};
+
+JobList.defaultProps = {
+  organization: {},
+  jobs: [],
+};

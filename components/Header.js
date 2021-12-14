@@ -2,11 +2,6 @@ import { Box } from "@welcome-ui/box";
 import { Text } from "@welcome-ui/text";
 import { Shape } from "@welcome-ui/shape";
 import Image from "next/image";
-import dianeAvatar from "../assets/dianeAvatar.png";
-import dianeCelebrate from "../assets/dianeCelebrate.png";
-import dianeFingercrossed from "../assets/dianeFingercrossed.png";
-import dianeHappy from "../assets/dianeHappy.png";
-import dianeOops from "../assets/dianeOops.png";
 import { useState } from "react";
 import styled from "styled-components";
 
@@ -16,11 +11,11 @@ const ShapeStyled = styled(Shape)`
 
 export default function Header() {
   const [avatars, setAvatars] = useState([
-    dianeAvatar,
-    dianeCelebrate,
-    dianeFingercrossed,
-    dianeHappy,
-    dianeOops,
+    "/memoji/avatar.png",
+    "/memoji/celebrate.png",
+    "/memoji/fingercrossed.png",
+    "/memoji/happy.png",
+    "/memoji/oops.png",
   ]);
   const [index, setIndex] = useState(0);
 
@@ -44,7 +39,12 @@ export default function Header() {
         Welcome to the Leiksa Universe
       </Text>
       <ShapeStyled w="48px" h="48px">
-        <Image alt="" src={avatars[index]} onClick={() => checkIndex()} />
+        <Image
+          alt=""
+          src={avatars[index]}
+          onClick={() => checkIndex()}
+          layout="fill"
+        />
       </ShapeStyled>
     </Box>
   );

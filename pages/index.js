@@ -86,7 +86,7 @@ export default function Root(props) {
 
   const isJobList =
     filteredJobs() == 0 ? (
-      <EmptyJobList></EmptyJobList>
+      <EmptyJobList />
     ) : (
       <JobList organization={organization} jobs={filteredJobs()} />
     );

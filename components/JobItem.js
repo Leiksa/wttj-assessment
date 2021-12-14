@@ -11,6 +11,7 @@ import {
   CrossIcon,
   TargetIcon,
 } from "@welcome-ui/icons";
+import PropTypes from "prop-types";
 import dayjs from "dayjs";
 import { useState, useEffect } from "react";
 import styled from "styled-components";
@@ -138,3 +139,11 @@ export default function JobItem(props) {
     </Box>
   );
 }
+
+JobItem.propTypes = {
+  jobs: PropTypes.array.isRequired,
+};
+
+JobItem.defaultProps = {
+  jobs: [],
+};

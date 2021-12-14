@@ -3,6 +3,7 @@ import { Field } from "@welcome-ui/field";
 import { InputText } from "@welcome-ui/input-text";
 import { Select } from "@welcome-ui/select";
 import { SearchIcon, MapIcon, SuitcaseIcon } from "@welcome-ui/icons";
+import PropTypes from "prop-types";
 
 export default function SearchSection(props) {
   const { jobs, setSearch, setDepartment, setOffice, department, office } =
@@ -76,3 +77,18 @@ export default function SearchSection(props) {
     </Box>
   );
 }
+
+SearchSection.propTypes = {
+  jobs: PropTypes.array.isRequired,
+  setSearch: PropTypes.func.isRequired,
+  setDepartment: PropTypes.func.isRequired,
+  setOffice: PropTypes.func.isRequired,
+  department: PropTypes.string.isRequired,
+  office: PropTypes.string.isRequired,
+};
+
+SearchSection.defaultProps = {
+  jobs: [],
+  department: "",
+  office: "",
+};
