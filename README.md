@@ -1,34 +1,22 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Welcome to Leiksa Universe](https://wttj-assessment.vercel.app/preview.png)](https://wttj-assessment.vercel.app)
 
-## Getting Started
+# Welcome to Leiksa Universe
 
-First, run the development server:
+[![Netlify Status][vercel-src]][vercel-href]
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+> This website is the technical assessment for Welcome to the Jungle
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 🚀 Features
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+- Show the list of Jobs for a given organization
+- Have the ability to search into this list thanks a SearchBar & Select filters
+- If you look close you could find a little easteregg 👀
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+To see how I organized my project: 
+https://impossible-grouse-0f6.notion.site/WTTJ-Technical-assessment-0e649cec6a2e4fdcb39655f9625859e9
 
-## Learn More
+<!-- Badges -->
+[vercel-src]: http://therealsujitk-vercel-badge.vercel.app/?app=wttj-assessment
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[vercel-href]: https://wttj-assessment.vercel.app
