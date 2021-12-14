@@ -1,7 +1,7 @@
 import { Box } from "@welcome-ui/box";
 import { Text } from "@welcome-ui/text";
 import { Shape } from "@welcome-ui/shape";
-import dianeSad from "../assets/dianeSad.png";
+import dianeSad from "../public/memoji/sad.png";
 import Image from "next/image";
 import styled from "styled-components";
 
