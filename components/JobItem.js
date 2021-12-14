@@ -30,6 +30,7 @@ function JobModal(props) {
   }, []);
 
   const modal = useModalState();
+
   const website = job.websites_urls.find(
     (websites_url) => websites_url.website_reference === "wttj_fr"
   );
@@ -142,8 +143,10 @@ export default function JobItem(props) {
 
 JobItem.propTypes = {
   jobs: PropTypes.array.isRequired,
+  organization: PropTypes.string.isRequired,
 };
 
 JobItem.defaultProps = {
   jobs: [],
+  organization: "Welcome to the Jungle",
 };

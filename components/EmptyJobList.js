@@ -1,7 +1,7 @@
 import { Box } from "@welcome-ui/box";
 import { Text } from "@welcome-ui/text";
 import { Shape } from "@welcome-ui/shape";
-import dianeSad from "../public/memoji/sad.png";
+import sad from "../public/memoji/sad.png";
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -16,7 +16,7 @@ export default function EmptyJobList() {
         Oh no ! There are no jobs matching your search.
       </Text>
       <ShapeStyled w="86px" h="86px">
-        <Image alt="" src={dianeSad} />
+        <Image alt="" src={sad} />
       </ShapeStyled>
     </Box>
   );

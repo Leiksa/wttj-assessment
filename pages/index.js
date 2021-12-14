@@ -75,6 +75,7 @@ export default function Root(props) {
   const [department, setDepartment] = useState("None");
   const [office, setOffice] = useState("None");
 
+  // Conditional filters based on Input Search & Select
   function filteredJobs() {
     return organization.jobs.filter(
       (job) =>
