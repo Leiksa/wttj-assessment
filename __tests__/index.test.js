@@ -77,7 +77,7 @@ describe("Check JobItem", () => {
   test("Should render JobItem", async () => {
     render(
       <WuiProvider theme={theme}>
-        <JobItem job={job} organization="Tamer" />
+        <JobItem job={job} organization="" />
       </WuiProvider>
     );
 
@@ -88,7 +88,7 @@ describe("Check JobItem", () => {
   test("Should render modal", async () => {
     render(
       <WuiProvider theme={theme}>
-        <JobItem job={job} organization="Tamer" />
+        <JobItem job={job} organization="" />
       </WuiProvider>
     );
 

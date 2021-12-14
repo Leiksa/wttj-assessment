@@ -9,6 +9,7 @@ export default function SearchSection(props) {
   const { jobs, setSearch, setDepartment, setOffice, department, office } =
     props;
 
+  // Retrieve unique department, format them to fit select & add none option at the beginning.
   const departments = jobs
     .reduce(
       (acc, job) =>
@@ -21,6 +22,7 @@ export default function SearchSection(props) {
 
   departments.unshift({ label: "None", value: "None" });
 
+  // Retrieve unique office, format them to fit select & add none option at the beginning.
   const offices = jobs
     .reduce(
       (acc, job) =>
@@ -38,7 +40,6 @@ export default function SearchSection(props) {
           icon={<SearchIcon label="SearchBar" color="light.100" />}
           component={InputText}
           isClearable
-          name="searchBar"
           label="Search"
           throttle={1000}
           placeholder="Your dream job?"
